@@ -4,7 +4,9 @@
   "description": "Example of parsing, analyzing and printing csv with Typescript",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
   },
   "repository": {
     "type": "git",
