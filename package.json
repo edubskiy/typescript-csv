@@ -1,0 +1,26 @@
+{
+  "name": "typescript-csv",
+  "version": "1.0.0",
+  "description": "Example of parsing, analyzing and printing csv with Typescript",
+  "main": "index.js",
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edubskiy/typescript-csv.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/edubskiy/typescript-csv/issues"
+  },
+  "homepage": "https://github.com/edubskiy/typescript-csv#readme",
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "nodemon": "^2.0.2"
+  }
+}
