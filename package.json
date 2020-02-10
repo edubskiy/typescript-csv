@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/edubskiy/typescript-csv#readme",
   "dependencies": {
+    "@types/node": "^13.7.0",
     "concurrently": "^5.1.0",
     "nodemon": "^2.0.2"
   }
