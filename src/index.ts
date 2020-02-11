@@ -1,21 +1,12 @@
+import { MatchResult } from './matchResult';
 import { CsvFileReader } from './CsvFileReader';
 
 const reader = new CsvFileReader('football.csv');
 reader.read();
-// const matches = fs.readFileSync('football.csv', {
-//   encoding: 'utf-8'
-// })
-// .split('\n')
-// .map((row: string): string[] => {
-//   return row.split(',');
-// });
 
+// const dateOfFirstMatch = reader.data[0][0];
 
-enum MatchResult {
-  HomeWin = 'H',
-  AwayWin = 'A',
-  Draw = 'D'
-};
+// console.log("date of first match ", dateOfFirstMatch);
 
 let manUnitedWins = 0;
 
