@@ -1,4 +1,4 @@
-import { MatchResult } from './matchResult';
+import { MatchResult } from './MatchResult';
 import { dateStringToDate } from './utils';
 import fs from 'fs';
 
