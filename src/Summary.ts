@@ -8,11 +8,14 @@ export interface OutputTarget {
   print(report: string): void;
 }
 
-class Summary {
+export class Summary {
   constructor(
     public analyzer: Analyzer, 
     public outputTarget: OutputTarget
   ) {}
 
-  buildAndPrintReport(matchData: MatchData[]) {}
+  buildAndPrintReport(matches: MatchData[]): void {
+    const report = this.analyzer.run(matches);
+    this.outputTarget.print(report);
+  }
 }
